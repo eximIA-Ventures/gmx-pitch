@@ -202,9 +202,9 @@ export default function GMXPitch() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[
                 {
-                  icon: Clock,
-                  title: "Sem CRM",
-                  desc: "Ninguém consegue em 30 segundos dizer quantos clientes têm seguro mas não têm previdência. Ou quantos consórcios vencem nos próximos 30 dias.",
+                  icon: Globe,
+                  title: "Invisibilidade digital",
+                  desc: "Gustavo tem conteúdo valioso — 4 Potes, finanças pessoais — mas não há presença consistente. Fintechs ocupam o espaço enquanto a GMX fica de fora.",
                 },
                 {
                   icon: MessageSquare,
@@ -212,14 +212,14 @@ export default function GMXPitch() {
                   desc: "A maior carteira Mapfre do Brasil depende de alguém lembrar de ligar. Consórcios são abandonados por falta de acompanhamento sistemático.",
                 },
                 {
-                  icon: Globe,
-                  title: "Invisibilidade digital",
-                  desc: "Gustavo tem conteúdo valioso — 4 Potes, finanças pessoais — mas não há presença consistente. Fintechs ocupam o espaço enquanto a GMX fica de fora.",
-                },
-                {
                   icon: Search,
                   title: "Pipeline estagnado",
                   desc: "Leads do programa MGM chegam por WhatsApp e ficam esperando triagem. Não há funil digital. Não há prospecção automatizada.",
+                },
+                {
+                  icon: Clock,
+                  title: "Sem CRM",
+                  desc: "Ninguém consegue em 30 segundos dizer quantos clientes têm seguro mas não têm previdência. Ou quantos consórcios vencem nos próximos 30 dias.",
                 },
               ].map((pain) => (
                 <div
@@ -257,7 +257,7 @@ export default function GMXPitch() {
       </section>
 
       {/* ═══════════════════════════════════════════════ */}
-      {/* SLIDE 3: O QUE VAMOS ALCANÇAR */}
+      {/* SLIDE 3: RESULTADOS */}
       {/* ═══════════════════════════════════════════════ */}
       <section className="slide">
         <motion.div
@@ -291,9 +291,9 @@ export default function GMXPitch() {
             {[
               {
                 num: "01",
-                title: "Visibilidade total dos 1.400 clientes",
-                desc: "Um sistema único que responde em 1 clique: quem tem seguro mas não tem previdência? Quem está inativo há 6 meses? Quantos consórcios vencem nos próximos 30 dias?",
-                icon: Database,
+                title: "Presença digital sem esforço",
+                desc: "4 artigos e 2 vídeos por semana com a voz do Gustavo — gerados por IA, revisados em minutos. LinkedIn ativo sem ninguém parar de vender para escrever.",
+                icon: Sparkles,
                 color: "blue" as const,
               },
               {
@@ -305,16 +305,16 @@ export default function GMXPitch() {
               },
               {
                 num: "03",
-                title: "Presença digital sem esforço",
-                desc: "4 artigos e 2 vídeos por semana com a voz do Gustavo — gerados por IA, revisados em minutos. LinkedIn ativo sem ninguém parar de vender para escrever.",
-                icon: Sparkles,
+                title: "Pipeline de novos clientes 24/7",
+                desc: "Conteúdo atrai. Lead magnet captura. Chatbot qualifica. CRM organiza. Humano fecha. Um funil digital alimentado pelo programa MGM e pela presença online.",
+                icon: TrendingUp,
                 color: "teal" as const,
               },
               {
                 num: "04",
-                title: "Pipeline de novos clientes 24/7",
-                desc: "Conteúdo atrai. Lead magnet captura. Chatbot qualifica. CRM organiza. Humano fecha. Um funil digital alimentado pelo programa MGM e pela presença online.",
-                icon: TrendingUp,
+                title: "Visibilidade total dos 1.400 clientes",
+                desc: "Um sistema único que responde em 1 clique: quem tem seguro mas não tem previdência? Quem está inativo há 6 meses? Quantos consórcios vencem nos próximos 30 dias?",
+                icon: Database,
                 color: "teal" as const,
               },
             ].map((item) => (
@@ -348,7 +348,7 @@ export default function GMXPitch() {
       </section>
 
       {/* ═══════════════════════════════════════════════ */}
-      {/* SLIDE 4: OS 4 PROJETOS */}
+      {/* SLIDE 4: AS 2 FASES */}
       {/* ═══════════════════════════════════════════════ */}
       <section className="slide !min-h-0 py-20 md:py-28">
         <motion.div
@@ -368,42 +368,67 @@ export default function GMXPitch() {
           <motion.h2
             variants={fadeUp}
             custom={1}
-            className="text-4xl md:text-6xl font-serif mb-16"
+            className="text-4xl md:text-6xl font-serif mb-6"
           >
-            3 projetos + 1{" "}
-            <span className="text-gradient-gold italic">
-              bônus.
+            IA primeiro.{" "}
+            <span className="text-gradient-blue italic">
+              Infraestrutura depois.
             </span>
           </motion.h2>
 
-          {/* Projeto 1: CRM */}
-          <motion.div
+          <motion.p
             variants={fadeUp}
             custom={2}
-            className="mb-8 p-8 rounded-2xl border border-blue/15 bg-gradient-to-br from-blue-subtle to-transparent"
+            className="text-lg text-cream-dim max-w-3xl mb-16 leading-relaxed"
           >
+            A GMX vê IA funcionando nas primeiras semanas. Depois, escalamos
+            com a infraestrutura certa. Cada fase entrega valor independente.
+          </motion.p>
+
+          {/* ── FASE 1 HEADER ── */}
+          <motion.div
+            variants={fadeUp}
+            custom={3}
+            className="flex items-center gap-4 mb-8"
+          >
+            <div className="px-4 py-1.5 rounded-full bg-blue text-white text-xs font-bold uppercase tracking-widest">
+              Fase 1
+            </div>
+            <h3 className="font-serif text-2xl">IA em Ação</h3>
+            <span className="text-sm text-cream-dim">&mdash; semanas 1 a 5</span>
+          </motion.div>
+
+          {/* Projeto 1: Conteúdo com IA */}
+          <motion.div
+            variants={fadeUp}
+            custom={4}
+            className="mb-6 p-8 rounded-2xl border-2 border-blue/30 bg-gradient-to-br from-blue-subtle to-transparent relative overflow-hidden"
+          >
+            <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-blue/20 text-blue-light text-[10px] font-bold uppercase tracking-widest">
+              IA Pura
+            </div>
             <div className="flex flex-col lg:flex-row gap-8">
               <div className="lg:w-2/3">
                 <div className="flex items-center gap-3 mb-4">
-                  <Database className="w-7 h-7 text-blue-light" />
-                  <h3 className="font-serif text-2xl">CRM Customizado</h3>
+                  <Sparkles className="w-7 h-7 text-blue-light" />
+                  <h3 className="font-serif text-2xl">Conteúdo com IA</h3>
                   <span className="px-3 py-1 rounded-full bg-blue/10 text-blue-light text-xs font-mono">
                     Projeto 1
                   </span>
                 </div>
                 <p className="text-cream-dim leading-relaxed mb-6">
-                  Não é um CRM genérico. É um sistema construído para como a GMX
-                  realmente opera &mdash; com todos os produtos, todos os
-                  clientes, em um lugar só.
+                  Presença digital profissional &mdash; artigos e vídeos com a
+                  voz do Gustavo, sem ninguém parar de vender para escrever.
+                  Resultado visível na primeira semana.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
                   {[
-                    "Dashboard com 1.400 clientes por produto",
-                    "Pipeline de vendas com status de cada oportunidade",
-                    "Alertas: renovação, inativo, cross-sell",
-                    "Integração nativa com WhatsApp Business",
-                    "Migração completa dos dados existentes",
-                    "Detecção automática de cross-sell",
+                    "4 artigos/semana no tom do Gustavo",
+                    "Treinamento de voz e estilo com IA",
+                    "2 vídeos curtos/semana (avatar ou roteiro)",
+                    "Publicação LinkedIn automatizada",
+                    "Templates por vertical (seguros, consórcios, etc.)",
+                    "Revisão humana em 5-10 minutos",
                   ].map((item) => (
                     <div key={item} className="flex gap-2 text-sm text-cream-dim">
                       <CheckCircle className="w-4 h-4 text-blue-light shrink-0 mt-0.5" />
@@ -417,17 +442,17 @@ export default function GMXPitch() {
                   Valor gerado
                 </div>
                 <div className="text-4xl font-serif text-gradient-blue mb-1">
-                  R$ 157K
+                  R$ 120K
                 </div>
                 <p className="text-sm text-cream-dim text-center mb-4">
-                  por ano em economia operacional
+                  por ano em posicionamento + referral
                 </p>
                 <div className="w-full h-px bg-edge my-2" />
                 <div className="text-sm font-mono text-dim mt-2 mb-1">
-                  Investimento individual
+                  Investimento
                 </div>
                 <div className="text-2xl font-serif text-cream">
-                  R$ 15.700
+                  R$ 14.000
                 </div>
               </div>
             </div>
@@ -436,9 +461,12 @@ export default function GMXPitch() {
           {/* Projeto 2: Follow-up */}
           <motion.div
             variants={fadeUp}
-            custom={3}
-            className="mb-8 p-8 rounded-2xl border border-blue/15 bg-gradient-to-br from-blue-subtle to-transparent"
+            custom={5}
+            className="mb-6 p-8 rounded-2xl border border-blue/15 bg-gradient-to-br from-blue-subtle to-transparent relative overflow-hidden"
           >
+            <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-blue/20 text-blue-light text-[10px] font-bold uppercase tracking-widest">
+              IA + Automação
+            </div>
             <div className="flex flex-col lg:flex-row gap-8">
               <div className="lg:w-2/3">
                 <div className="flex items-center gap-3 mb-4">
@@ -451,8 +479,8 @@ export default function GMXPitch() {
                   </span>
                 </div>
                 <p className="text-cream-dim leading-relaxed mb-6">
-                  Motor de cadência que cuida da carteira automaticamente via
-                  WhatsApp &mdash; com a voz da GMX e aprovação antes do envio.
+                  Motor de cadência com IA que cuida da maior carteira Mapfre do Brasil
+                  automaticamente via WhatsApp &mdash; com aprovação antes do envio.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
                   {[
@@ -482,7 +510,7 @@ export default function GMXPitch() {
                 </p>
                 <div className="w-full h-px bg-edge my-2" />
                 <div className="text-sm font-mono text-dim mt-2 mb-1">
-                  Investimento individual
+                  Investimento
                 </div>
                 <div className="text-2xl font-serif text-cream">
                   R$ 13.200
@@ -494,35 +522,38 @@ export default function GMXPitch() {
           {/* Projeto 3: Prospecção */}
           <motion.div
             variants={fadeUp}
-            custom={4}
-            className="mb-8 p-8 rounded-2xl border border-gold/15 bg-gradient-to-br from-gold-subtle to-transparent"
+            custom={6}
+            className="mb-16 p-8 rounded-2xl border border-blue/15 bg-gradient-to-br from-blue-subtle to-transparent relative overflow-hidden"
           >
+            <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-blue/20 text-blue-light text-[10px] font-bold uppercase tracking-widest">
+              IA + Chatbot
+            </div>
             <div className="flex flex-col lg:flex-row gap-8">
               <div className="lg:w-2/3">
                 <div className="flex items-center gap-3 mb-4">
-                  <Target className="w-7 h-7 text-gold" />
+                  <Bot className="w-7 h-7 text-blue-light" />
                   <h3 className="font-serif text-2xl">
-                    Prospecção Automatizada
+                    Prospecção com IA
                   </h3>
-                  <span className="px-3 py-1 rounded-full bg-gold/10 text-gold text-xs font-mono">
+                  <span className="px-3 py-1 rounded-full bg-blue/10 text-blue-light text-xs font-mono">
                     Projeto 3
                   </span>
                 </div>
                 <p className="text-cream-dim leading-relaxed mb-6">
-                  Funil digital completo que transforma presença online em
-                  clientes &mdash; com verificação legal antes de qualquer ação.
+                  Chatbot inteligente que qualifica leads 24/7 +
+                  funil digital completo &mdash; com verificação legal antes de qualquer ação.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
                   {[
+                    "Chatbot de qualificação (filtra antes do humano)",
                     "Verificação legal LGPD + ToS de cada plataforma",
                     "Lead magnet (ex: Guia dos 4 Potes) + landing page",
-                    "Chatbot de qualificação (filtra antes do humano)",
                     "LinkedIn Sales Navigator setup",
-                    "Cadência de outreach semi-automatizada",
-                    "Integração total com o CRM",
+                    "Cadência de outreach semi-automatizada com IA",
+                    "Integração total com o CRM (Fase 2)",
                   ].map((item) => (
                     <div key={item} className="flex gap-2 text-sm text-cream-dim">
-                      <CheckCircle className="w-4 h-4 text-gold shrink-0 mt-0.5" />
+                      <CheckCircle className="w-4 h-4 text-blue-light shrink-0 mt-0.5" />
                       {item}
                     </div>
                   ))}
@@ -537,7 +568,7 @@ export default function GMXPitch() {
                 <div className="text-sm font-mono text-dim mb-4">
                   Valor gerado
                 </div>
-                <div className="text-4xl font-serif text-gradient-gold mb-1">
+                <div className="text-4xl font-serif text-gradient-blue mb-1">
                   R$ 180K
                 </div>
                 <p className="text-sm text-cream-dim text-center mb-4">
@@ -545,7 +576,7 @@ export default function GMXPitch() {
                 </p>
                 <div className="w-full h-px bg-edge my-2" />
                 <div className="text-sm font-mono text-dim mt-2 mb-1">
-                  Investimento individual
+                  Investimento
                 </div>
                 <div className="text-2xl font-serif text-cream">
                   R$ 18.000
@@ -554,34 +585,47 @@ export default function GMXPitch() {
             </div>
           </motion.div>
 
-          {/* BÔNUS: Conteúdo com IA */}
+          {/* ── FASE 2 HEADER ── */}
           <motion.div
             variants={fadeUp}
-            custom={5}
-            className="p-8 rounded-2xl border-2 border-gold/40 bg-gradient-to-br from-gold-subtle to-transparent relative overflow-hidden"
+            custom={7}
+            className="flex items-center gap-4 mb-8"
           >
-            <div className="absolute top-4 right-4 px-4 py-1.5 rounded-full bg-gold text-black text-xs font-bold uppercase tracking-widest">
-              Bônus Incluso
+            <div className="px-4 py-1.5 rounded-full bg-gold text-black text-xs font-bold uppercase tracking-widest">
+              Fase 2
             </div>
+            <h3 className="font-serif text-2xl">Infraestrutura para Escalar</h3>
+            <span className="text-sm text-cream-dim">&mdash; semanas 5 a 10</span>
+          </motion.div>
+
+          {/* Projeto 4: CRM */}
+          <motion.div
+            variants={fadeUp}
+            custom={8}
+            className="p-8 rounded-2xl border border-gold/15 bg-gradient-to-br from-gold-subtle to-transparent"
+          >
             <div className="flex flex-col lg:flex-row gap-8">
               <div className="lg:w-2/3">
                 <div className="flex items-center gap-3 mb-4">
-                  <Sparkles className="w-7 h-7 text-gold" />
-                  <h3 className="font-serif text-2xl">Conteúdo com IA</h3>
+                  <Database className="w-7 h-7 text-gold" />
+                  <h3 className="font-serif text-2xl">CRM Customizado</h3>
+                  <span className="px-3 py-1 rounded-full bg-gold/10 text-gold text-xs font-mono">
+                    Projeto 4
+                  </span>
                 </div>
                 <p className="text-cream-dim leading-relaxed mb-6">
-                  Presença digital profissional &mdash; artigos e vídeos com a
-                  voz do Gustavo, sem ninguém parar de vender para escrever.
-                  <strong className="text-gold"> Incluso em qualquer projeto.</strong>
+                  O sistema que organiza tudo que a IA gera. Dashboard de
+                  clientes, pipeline de vendas, alertas inteligentes &mdash;
+                  construído para como a GMX realmente opera.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
                   {[
-                    "4 artigos/semana no tom do Gustavo",
-                    "Treinamento de voz e estilo com IA",
-                    "2 vídeos curtos/semana (avatar ou roteiro)",
-                    "Publicação LinkedIn automatizada",
-                    "Templates por vertical (seguros, consórcios, etc.)",
-                    "Revisão humana em 5-10 minutos",
+                    "Dashboard com 1.400 clientes por produto",
+                    "Pipeline de vendas com status de cada oportunidade",
+                    "Alertas: renovação, inativo, cross-sell",
+                    "Integração nativa com WhatsApp Business",
+                    "Migração completa dos dados existentes",
+                    "Detecção automática de cross-sell",
                   ].map((item) => (
                     <div key={item} className="flex gap-2 text-sm text-cream-dim">
                       <CheckCircle className="w-4 h-4 text-gold shrink-0 mt-0.5" />
@@ -590,29 +634,23 @@ export default function GMXPitch() {
                   ))}
                 </div>
               </div>
-              <div className="lg:w-1/3 flex flex-col justify-center items-center p-6 rounded-xl bg-gold/5 border border-gold/20">
+              <div className="lg:w-1/3 flex flex-col justify-center items-center p-6 rounded-xl bg-surface/50 border border-edge">
                 <div className="text-sm font-mono text-dim mb-4">
-                  Valor deste bônus
+                  Valor gerado
                 </div>
                 <div className="text-4xl font-serif text-gradient-gold mb-1">
-                  R$ 120K
+                  R$ 157K
                 </div>
                 <p className="text-sm text-cream-dim text-center mb-4">
-                  por ano em posicionamento + referral
+                  por ano em economia operacional
                 </p>
-                <div className="w-full h-px bg-gold/20 my-2" />
-                <div className="text-sm font-mono text-gold mt-2 mb-1">
+                <div className="w-full h-px bg-edge my-2" />
+                <div className="text-sm font-mono text-dim mt-2 mb-1">
                   Investimento
                 </div>
-                <div className="text-2xl font-serif text-gold line-through opacity-60">
-                  R$ 14.000
+                <div className="text-2xl font-serif text-cream">
+                  R$ 15.700
                 </div>
-                <div className="text-3xl font-serif text-gold font-bold mt-1">
-                  R$ 0
-                </div>
-                <p className="text-xs text-gold/70 mt-2 text-center">
-                  Incluso como bônus
-                </p>
               </div>
             </div>
           </motion.div>
@@ -620,7 +658,7 @@ export default function GMXPitch() {
       </section>
 
       {/* ═══════════════════════════════════════════════ */}
-      {/* SLIDE 4B: VALOR GERADO — ROI DETALHADO */}
+      {/* SLIDE 4B: ROI CONSOLIDADO */}
       {/* ═══════════════════════════════════════════════ */}
       <section className="slide !min-h-0 py-20 md:py-28">
         <motion.div
@@ -656,50 +694,40 @@ export default function GMXPitch() {
             de receita.
           </motion.p>
 
-          {/* ROI Cards por projeto */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* CRM */}
+            {/* Conteúdo */}
             <motion.div
               variants={fadeUp}
               custom={3}
               className="p-8 rounded-2xl border border-blue/20 bg-gradient-to-br from-blue-subtle to-transparent"
             >
               <div className="flex items-center gap-3 mb-5">
-                <Database className="w-6 h-6 text-blue-light" />
-                <h3 className="font-serif text-xl">CRM Customizado</h3>
+                <Sparkles className="w-6 h-6 text-blue-light" />
+                <h3 className="font-serif text-xl">Conteúdo com IA</h3>
+                <span className="text-[10px] px-2 py-0.5 rounded-full bg-blue/20 text-blue-light">Fase 1</span>
               </div>
               <div className="text-4xl font-serif text-gradient-blue mb-6">
-                R$ 157K<span className="text-lg text-cream-dim font-normal">/ano</span>
+                R$ 120K<span className="text-lg text-cream-dim font-normal">/ano</span>
               </div>
               <div className="space-y-4">
                 <div className="flex justify-between items-start gap-4">
                   <div>
-                    <div className="text-sm text-cream font-medium">Detecção de cross-sell</div>
+                    <div className="text-sm text-cream font-medium">Substituição de produção</div>
                     <p className="text-xs text-cream-dim mt-0.5">
-                      1.400 clientes × 6% conversão × R$1.000 ticket médio. Cliente tem seguro mas não previdência? Alerta automático.
+                      4 artigos + 2 vídeos/semana. Uma agência cobra R$6K/mês pelo mesmo volume. Com IA, sai em minutos.
                     </p>
                   </div>
-                  <span className="text-sm font-mono text-blue-light whitespace-nowrap">R$ 84K</span>
+                  <span className="text-sm font-mono text-blue-light whitespace-nowrap">R$ 72K</span>
                 </div>
                 <div className="h-px bg-edge/50" />
                 <div className="flex justify-between items-start gap-4">
                   <div>
-                    <div className="text-sm text-cream font-medium">Redução de churn</div>
+                    <div className="text-sm text-cream font-medium">Leads orgânicos</div>
                     <p className="text-xs text-cream-dim mt-0.5">
-                      5% menos cancelamentos com alertas de inatividade. Clientes inativos há 90+ dias identificados antes de sair.
+                      Autoridade digital gera indicações. Quem publica regularmente no LinkedIn atrai clientes sem pagar por lead.
                     </p>
                   </div>
-                  <span className="text-sm font-mono text-blue-light whitespace-nowrap">R$ 42K</span>
-                </div>
-                <div className="h-px bg-edge/50" />
-                <div className="flex justify-between items-start gap-4">
-                  <div>
-                    <div className="text-sm text-cream font-medium">Eficiência operacional</div>
-                    <p className="text-xs text-cream-dim mt-0.5">
-                      ~0,5 FTE economizado. Fim do controle manual de 1.400 clientes em planilha.
-                    </p>
-                  </div>
-                  <span className="text-sm font-mono text-blue-light whitespace-nowrap">R$ 31K</span>
+                  <span className="text-sm font-mono text-blue-light whitespace-nowrap">R$ 48K</span>
                 </div>
               </div>
             </motion.div>
@@ -713,6 +741,7 @@ export default function GMXPitch() {
               <div className="flex items-center gap-3 mb-5">
                 <MessageSquare className="w-6 h-6 text-blue-light" />
                 <h3 className="font-serif text-xl">Follow-up Consórcios</h3>
+                <span className="text-[10px] px-2 py-0.5 rounded-full bg-blue/20 text-blue-light">Fase 1</span>
               </div>
               <div className="text-4xl font-serif text-gradient-blue mb-6">
                 R$ 132K<span className="text-lg text-cream-dim font-normal">/ano</span>
@@ -744,13 +773,14 @@ export default function GMXPitch() {
             <motion.div
               variants={fadeUp}
               custom={5}
-              className="p-8 rounded-2xl border border-gold/20 bg-gradient-to-br from-gold-subtle to-transparent"
+              className="p-8 rounded-2xl border border-blue/20 bg-gradient-to-br from-blue-subtle to-transparent"
             >
               <div className="flex items-center gap-3 mb-5">
-                <Target className="w-6 h-6 text-gold" />
-                <h3 className="font-serif text-xl">Prospecção Automatizada</h3>
+                <Bot className="w-6 h-6 text-blue-light" />
+                <h3 className="font-serif text-xl">Prospecção com IA</h3>
+                <span className="text-[10px] px-2 py-0.5 rounded-full bg-blue/20 text-blue-light">Fase 1</span>
               </div>
-              <div className="text-4xl font-serif text-gradient-gold mb-6">
+              <div className="text-4xl font-serif text-gradient-blue mb-6">
                 R$ 180K<span className="text-lg text-cream-dim font-normal">/ano</span>
               </div>
               <div className="space-y-4">
@@ -761,7 +791,7 @@ export default function GMXPitch() {
                       90 leads/mês × 10% conversão × R$1.000/cliente/ano. Lead magnet + chatbot + qualificação 24/7.
                     </p>
                   </div>
-                  <span className="text-sm font-mono text-gold whitespace-nowrap">R$ 108K</span>
+                  <span className="text-sm font-mono text-blue-light whitespace-nowrap">R$ 108K</span>
                 </div>
                 <div className="h-px bg-edge/50" />
                 <div className="flex justify-between items-start gap-4">
@@ -771,46 +801,44 @@ export default function GMXPitch() {
                       Indicações qualificadas por IA, não filtradas à mão no WhatsApp. Mais indicações convertidas com menos esforço.
                     </p>
                   </div>
-                  <span className="text-sm font-mono text-gold whitespace-nowrap">R$ 72K</span>
+                  <span className="text-sm font-mono text-blue-light whitespace-nowrap">R$ 72K</span>
                 </div>
               </div>
             </motion.div>
 
-            {/* Conteúdo BÔNUS */}
+            {/* CRM */}
             <motion.div
               variants={fadeUp}
               custom={6}
-              className="p-8 rounded-2xl border-2 border-gold/40 bg-gradient-to-br from-gold-subtle to-transparent relative overflow-hidden"
+              className="p-8 rounded-2xl border border-gold/20 bg-gradient-to-br from-gold-subtle to-transparent"
             >
-              <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-gold text-black text-xs font-bold uppercase tracking-widest">
-                Bônus
-              </div>
               <div className="flex items-center gap-3 mb-5">
-                <Sparkles className="w-6 h-6 text-gold" />
-                <h3 className="font-serif text-xl">Conteúdo com IA</h3>
+                <Database className="w-6 h-6 text-gold" />
+                <h3 className="font-serif text-xl">CRM Customizado</h3>
+                <span className="text-[10px] px-2 py-0.5 rounded-full bg-gold/20 text-gold">Fase 2</span>
               </div>
               <div className="text-4xl font-serif text-gradient-gold mb-6">
-                R$ 120K<span className="text-lg text-cream-dim font-normal">/ano</span>
+                R$ 157K<span className="text-lg text-cream-dim font-normal">/ano</span>
               </div>
               <div className="space-y-4">
                 <div className="flex justify-between items-start gap-4">
                   <div>
-                    <div className="text-sm text-cream font-medium">Substituição de produção</div>
+                    <div className="text-sm text-cream font-medium">Detecção de cross-sell</div>
                     <p className="text-xs text-cream-dim mt-0.5">
-                      4 artigos + 2 vídeos/semana. Uma agência cobra R$6K/mês pelo mesmo volume. Com IA, sai em minutos.
+                      1.400 clientes × 6% conversão × R$1.000 ticket médio. Cliente tem seguro mas não previdência? Alerta automático.
                     </p>
                   </div>
-                  <span className="text-sm font-mono text-gold whitespace-nowrap">R$ 72K</span>
+                  <span className="text-sm font-mono text-gold whitespace-nowrap">R$ 84K</span>
                 </div>
                 <div className="h-px bg-edge/50" />
                 <div className="flex justify-between items-start gap-4">
                   <div>
-                    <div className="text-sm text-cream font-medium">Leads orgânicos</div>
+                    <div className="text-sm text-cream font-medium">Retenção + eficiência</div>
                     <p className="text-xs text-cream-dim mt-0.5">
-                      Autoridade digital gera indicações. Quem publica regularmente no LinkedIn atrai clientes sem pagar por lead.
+                      5% menos cancelamentos com alertas de inatividade + ~0,5 FTE economizado em controle manual.
                     </p>
                   </div>
-                  <span className="text-sm font-mono text-gold whitespace-nowrap">R$ 48K</span>
+                  <span className="text-sm font-mono text-gold whitespace-nowrap">R$ 73K</span>
                 </div>
               </div>
             </motion.div>
@@ -832,7 +860,7 @@ export default function GMXPitch() {
             </div>
             <div className="flex gap-8 text-center">
               <div>
-                <div className="text-2xl font-serif text-cream">12,6:1</div>
+                <div className="text-2xl font-serif text-cream">9,7:1</div>
                 <div className="text-xs text-cream-dim">ROI</div>
               </div>
               <div className="w-px bg-edge" />
@@ -842,7 +870,7 @@ export default function GMXPitch() {
               </div>
               <div className="w-px bg-edge" />
               <div>
-                <div className="text-2xl font-serif text-cream">1,6%</div>
+                <div className="text-2xl font-serif text-cream">1,7%</div>
                 <div className="text-xs text-cream-dim">da receita GMX</div>
               </div>
             </div>
@@ -883,14 +911,11 @@ export default function GMXPitch() {
             className="text-lg text-cream-dim max-w-3xl mb-12 leading-relaxed"
           >
             Precificação baseada em ROI: cada projeto custa 10% do valor que gera no
-            primeiro ano. Todos incluem o bônus de Conteúdo com IA.
+            primeiro ano. Comece pela Fase 1 ou contrate tudo de uma vez.
           </motion.p>
 
-          {/* Pricing per project */}
+          {/* Pricing table */}
           <motion.div variants={fadeUp} custom={3} className="mb-12">
-            <h3 className="text-sm font-mono text-dim mb-6 uppercase tracking-widest">
-              Preço por projeto
-            </h3>
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>
@@ -899,13 +924,13 @@ export default function GMXPitch() {
                       Projeto
                     </th>
                     <th className="text-center py-4 px-4 font-mono text-xs text-dim uppercase tracking-widest">
+                      Fase
+                    </th>
+                    <th className="text-center py-4 px-4 font-mono text-xs text-dim uppercase tracking-widest">
                       ROI Ano 1
                     </th>
                     <th className="text-center py-4 px-4 font-mono text-xs text-dim uppercase tracking-widest">
                       Investimento
-                    </th>
-                    <th className="text-center py-4 px-4 font-mono text-xs text-dim uppercase tracking-widest">
-                      ROI Ratio
                     </th>
                     <th className="text-center py-4 px-4 font-mono text-xs text-dim uppercase tracking-widest">
                       Entrega
@@ -915,75 +940,61 @@ export default function GMXPitch() {
                 <tbody className="text-cream-dim">
                   {[
                     {
-                      name: "1. CRM Customizado",
-                      roiValue: "R$ 157K",
-                      price: "R$ 15.700",
-                      roi: "10:1",
-                      delivery: "3-4 sem",
+                      name: "1. Conteúdo com IA",
+                      phase: "Fase 1",
+                      roiValue: "R$ 120K",
+                      price: "R$ 14.000",
+                      delivery: "2-3 sem",
+                      phaseColor: "text-blue-light",
                     },
                     {
                       name: "2. Follow-up Consórcios",
+                      phase: "Fase 1",
                       roiValue: "R$ 132K",
                       price: "R$ 13.200",
-                      roi: "10:1",
                       delivery: "2-3 sem",
+                      phaseColor: "text-blue-light",
                     },
                     {
-                      name: "3. Prospecção Automatizada",
+                      name: "3. Prospecção com IA",
+                      phase: "Fase 1",
                       roiValue: "R$ 180K",
                       price: "R$ 18.000",
-                      roi: "10:1",
                       delivery: "3-4 sem",
+                      phaseColor: "text-blue-light",
                     },
                     {
-                      name: "BÔNUS: Conteúdo com IA",
-                      roiValue: "R$ 120K",
-                      price: "R$ 0",
-                      roi: "∞",
-                      delivery: "2-3 sem",
-                      isBonus: true,
+                      name: "4. CRM Customizado",
+                      phase: "Fase 2",
+                      roiValue: "R$ 157K",
+                      price: "R$ 15.700",
+                      delivery: "3-4 sem",
+                      phaseColor: "text-gold",
                     },
                   ].map((row) => (
-                    <tr key={row.name} className={`border-b border-edge/50 ${"isBonus" in row ? "text-gold" : ""}`}>
-                      <td className={`py-4 pr-4 font-medium ${"isBonus" in row ? "text-gold" : "text-cream"}`}>
+                    <tr key={row.name} className="border-b border-edge/50">
+                      <td className="py-4 pr-4 font-medium text-cream">
                         {row.name}
                       </td>
-                      <td className="text-center py-4 px-4">{row.roiValue}</td>
-                      <td className={`text-center py-4 px-4 font-semibold ${"isBonus" in row ? "text-gold" : "text-blue-light"}`}>
-                        {"isBonus" in row ? (
-                          <span>
-                            <span className="line-through opacity-50 mr-2">R$ 14.000</span>
-                            {row.price}
-                          </span>
-                        ) : row.price}
+                      <td className={`text-center py-4 px-4 font-mono text-xs ${row.phaseColor}`}>
+                        {row.phase}
                       </td>
-                      <td className="text-center py-4 px-4">{row.roi}</td>
+                      <td className="text-center py-4 px-4">{row.roiValue}</td>
+                      <td className="text-center py-4 px-4 font-semibold text-blue-light">
+                        {row.price}
+                      </td>
                       <td className="text-center py-4 px-4">{row.delivery}</td>
                     </tr>
                   ))}
                   <tr className="border-t-2 border-gold/30">
-                    <td className="py-4 pr-4 font-bold text-cream text-base">TOTAL</td>
+                    <td className="py-4 pr-4 font-bold text-cream text-base" colSpan={2}>TOTAL</td>
                     <td className="text-center py-4 px-4 font-bold text-cream">R$ 589K</td>
-                    <td className="text-center py-4 px-4 font-bold text-gold text-lg">R$ 46.900</td>
-                    <td className="text-center py-4 px-4 font-bold text-gold">12,6:1</td>
+                    <td className="text-center py-4 px-4 font-bold text-gold text-lg">R$ 60.900</td>
                     <td className="text-center py-4 px-4 text-cream">8-10 sem</td>
                   </tr>
                 </tbody>
               </table>
             </div>
-          </motion.div>
-
-          {/* Bonus callout */}
-          <motion.div
-            variants={fadeUp}
-            custom={4}
-            className="p-5 rounded-xl border border-gold/30 bg-gold-subtle text-center"
-          >
-            <p className="text-sm text-cream">
-              <Sparkles className="w-4 h-4 text-gold inline mr-2" />
-              <strong className="text-gold">Conteúdo com IA (valor R$ 14.000)</strong>{" "}
-              incluso gratuitamente em qualquer projeto. 4 entregas pelo preço de 3.
-            </p>
           </motion.div>
 
           {/* Payment Options */}
@@ -1005,10 +1016,10 @@ export default function GMXPitch() {
                   À vista
                 </div>
                 <div className="text-3xl font-serif text-gradient-gold mb-1">
-                  R$ 42.200
+                  R$ 54.800
                 </div>
                 <p className="text-xs text-gold mb-4">
-                  Economia de R$ 4.700 (10% off)
+                  Economia de R$ 6.100 (10% off)
                 </p>
                 <div className="w-full h-px bg-edge my-3" />
                 <p className="text-xs text-cream-dim">
@@ -1022,14 +1033,14 @@ export default function GMXPitch() {
                   Em 2×
                 </div>
                 <div className="text-3xl font-serif text-cream mb-1">
-                  2× R$ 23.450
+                  2× R$ 30.450
                 </div>
                 <p className="text-xs text-cream-dim mb-4">
-                  Total: R$ 46.900 &mdash; sem juros
+                  Total: R$ 60.900 &mdash; sem juros
                 </p>
                 <div className="w-full h-px bg-edge my-3" />
                 <p className="text-xs text-cream-dim">
-                  50% no início + 50% na entrega da Fase 1 (CRM + Follow-up).
+                  50% no início + 50% na entrega da Fase 1.
                 </p>
               </div>
 
@@ -1039,14 +1050,14 @@ export default function GMXPitch() {
                   Por fase
                 </div>
                 <div className="text-3xl font-serif text-cream mb-1">
-                  3 parcelas
+                  4 parcelas
                 </div>
                 <p className="text-xs text-cream-dim mb-4">
-                  Total: R$ 46.900 &mdash; sem juros
+                  Total: R$ 60.900 &mdash; sem juros
                 </p>
                 <div className="w-full h-px bg-edge my-3" />
                 <p className="text-xs text-cream-dim">
-                  Paga cada projeto na entrega da fase: R$ 15.700 + R$ 13.200 + R$ 18.000.
+                  Paga cada projeto na entrega: R$ 14.000 + R$ 13.200 + R$ 18.000 + R$ 15.700.
                 </p>
               </div>
             </div>
@@ -1085,58 +1096,51 @@ export default function GMXPitch() {
             {[
               {
                 phase: "Semana 1",
-                title: "Setup & Migração",
-                desc: "Mapeamento de dados, configuração de ambiente, início da migração dos 1.400 clientes.",
-                project: "CRM",
+                title: "Conteúdo com IA — Setup",
+                desc: "Treinamento de voz/tom do Gustavo, configuração do pipeline de artigos, primeiros artigos gerados.",
+                project: "Conteúdo",
                 color: "blue" as const,
               },
               {
                 phase: "Semanas 2-3",
-                title: "Dashboard & Pipeline",
-                desc: "Dashboard de clientes, pipeline de vendas, alertas inteligentes, integração WhatsApp Business.",
-                project: "CRM",
+                title: "Conteúdo Operacional + Follow-up",
+                desc: "Artigos e vídeos publicados no LinkedIn. Motor de cadência dos consórcios: templates, triggers, fluxo de aprovação.",
+                project: "Conteúdo + Follow-up",
                 color: "blue" as const,
               },
               {
                 phase: "Semanas 3-4",
-                title: "Motor de Cadência",
-                desc: "Follow-up automatizado de consórcios: templates, cadência, fluxo de aprovação, alertas ao consultor.",
-                project: "Follow-up",
+                title: "Chatbot + Prospecção",
+                desc: "Verificação legal LGPD. Chatbot de qualificação treinado. Lead magnet e landing page prontos.",
+                project: "Prospecção",
                 color: "blue" as const,
               },
               {
                 phase: "Semana 5",
                 title: "Entrega Fase 1",
-                desc: "Testes finais, ajustes, treinamento da equipe GMX. CRM + Follow-up operacionais.",
-                project: "CRM + Follow-up",
+                desc: "Conteúdo rodando, follow-up ativo, chatbot qualificando. IA em produção. Testes e ajustes finais.",
+                project: "Fase 1 completa",
                 color: "teal" as const,
               },
               {
                 phase: "Semanas 5-6",
-                title: "IA de Conteúdo",
-                desc: "Treinamento de voz/tom do Gustavo, pipeline de artigos, primeiros artigos publicados.",
-                project: "Conteúdo",
-                color: "gold" as const,
-              },
-              {
-                phase: "Semanas 6-7",
-                title: "Entrega Fase 2",
-                desc: "Setup de avatar, primeiros vídeos, publicação LinkedIn configurada. Conteúdo operacional.",
-                project: "Conteúdo",
+                title: "CRM — Setup & Migração",
+                desc: "Mapeamento de dados, configuração de ambiente, início da migração dos 1.400 clientes.",
+                project: "CRM",
                 color: "gold" as const,
               },
               {
                 phase: "Semanas 7-8",
-                title: "Funil Digital",
-                desc: "Verificação legal LGPD, lead magnet, landing page, chatbot de qualificação.",
-                project: "Prospecção",
+                title: "Dashboard & Pipeline",
+                desc: "Dashboard de clientes por produto, pipeline de vendas, alertas inteligentes, integração WhatsApp.",
+                project: "CRM",
                 color: "gold" as const,
               },
               {
-                phase: "Semanas 8-10",
-                title: "Entrega Fase 3",
-                desc: "LinkedIn Sales Navigator, cadência de outreach, integração CRM. Pipeline completo.",
-                project: "Prospecção",
+                phase: "Semanas 9-10",
+                title: "Entrega Fase 2",
+                desc: "CRM operacional, integrado com follow-up e prospecção. Cross-sell ativo. Treinamento da equipe.",
+                project: "Fase 2 completa",
                 color: "gold" as const,
               },
             ].map((step, i) => (
@@ -1156,7 +1160,7 @@ export default function GMXPitch() {
                           : "bg-gold"
                     }`}
                   />
-                  {i < 7 && (
+                  {i < 6 && (
                     <div className="w-px flex-1 bg-gradient-to-b from-edge-light to-edge" />
                   )}
                 </div>
@@ -1193,8 +1197,8 @@ export default function GMXPitch() {
             custom={10}
             className="mt-4 text-sm text-cream-dim/70 italic text-center"
           >
-            Cada fase entrega valor independente. O bônus de conteúdo
-            começa em paralelo desde a semana 2.
+            Fase 1 entrega IA funcionando em 5 semanas.
+            Fase 2 escala com infraestrutura nas semanas seguintes.
           </motion.p>
         </motion.div>
       </section>
@@ -1565,9 +1569,9 @@ export default function GMXPitch() {
             custom={2}
             className="text-lg text-cream-dim max-w-2xl mx-auto leading-relaxed mb-12"
           >
-            Escolha a opção que faz sentido &mdash; um projeto individual ou um
-            pacote &mdash; e definimos a data de início. Na primeira semana,
-            mapeamos os dados, configuramos o ambiente, e começamos.
+            Comece pela Fase 1 &mdash; IA em ação nas primeiras semanas &mdash;
+            ou contrate tudo de uma vez com desconto à vista. Na primeira semana,
+            o conteúdo com IA já começa a rodar.
           </motion.p>
 
           <motion.div
@@ -1596,7 +1600,7 @@ export default function GMXPitch() {
             <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-cream-dim">
               <span className="flex items-center gap-2">
                 <CheckCircle className="w-4 h-4 text-blue-light" />
-                Entrega em semanas
+                IA rodando em semanas
               </span>
               <span className="w-1 h-1 rounded-full bg-edge-light" />
               <span className="flex items-center gap-2">
@@ -1606,7 +1610,7 @@ export default function GMXPitch() {
               <span className="w-1 h-1 rounded-full bg-edge-light" />
               <span className="flex items-center gap-2">
                 <CheckCircle className="w-4 h-4 text-blue-light" />
-                ROI 7-15×
+                ROI 9,7×
               </span>
             </div>
           </motion.div>
