@@ -398,28 +398,29 @@ export default function GMXPitch() {
             <span className="text-sm text-cream-dim">&mdash; semanas 1 a 5</span>
           </motion.div>
 
-          {/* Projeto 1: Conteúdo com IA */}
+          {/* Projeto 1: Conteúdo com IA — BÔNUS */}
           <motion.div
             variants={fadeUp}
             custom={4}
-            className="mb-6 p-8 rounded-2xl border-2 border-blue/30 bg-gradient-to-br from-blue-subtle to-transparent relative overflow-hidden"
+            className="mb-6 p-8 rounded-2xl border-2 border-gold/40 bg-gradient-to-br from-gold-subtle to-transparent relative overflow-hidden"
           >
-            <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-blue/20 text-blue-light text-[10px] font-bold uppercase tracking-widest">
-              IA Pura
+            <div className="absolute top-4 right-4 px-4 py-1.5 rounded-full bg-gold text-black text-xs font-bold uppercase tracking-widest">
+              Bônus Incluso
             </div>
             <div className="flex flex-col lg:flex-row gap-8">
               <div className="lg:w-2/3">
                 <div className="flex items-center gap-3 mb-4">
-                  <Sparkles className="w-7 h-7 text-blue-light" />
+                  <Sparkles className="w-7 h-7 text-gold" />
                   <h3 className="font-serif text-2xl">Conteúdo com IA</h3>
-                  <span className="px-3 py-1 rounded-full bg-blue/10 text-blue-light text-xs font-mono">
-                    Projeto 1
+                  <span className="px-3 py-1 rounded-full bg-gold/10 text-gold text-xs font-mono">
+                    Bônus
                   </span>
                 </div>
                 <p className="text-cream-dim leading-relaxed mb-6">
                   Presença digital profissional &mdash; artigos e vídeos com a
                   voz do Gustavo, sem ninguém parar de vender para escrever.
                   Resultado visível na primeira semana.
+                  <strong className="text-gold"> Incluso em qualquer projeto.</strong>
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
                   {[
@@ -431,34 +432,40 @@ export default function GMXPitch() {
                     "Revisão humana em 5-10 minutos",
                   ].map((item) => (
                     <div key={item} className="flex gap-2 text-sm text-cream-dim">
-                      <CheckCircle className="w-4 h-4 text-blue-light shrink-0 mt-0.5" />
+                      <CheckCircle className="w-4 h-4 text-gold shrink-0 mt-0.5" />
                       {item}
                     </div>
                   ))}
                 </div>
               </div>
-              <div className="lg:w-1/3 flex flex-col justify-center items-center p-6 rounded-xl bg-surface/50 border border-edge">
+              <div className="lg:w-1/3 flex flex-col justify-center items-center p-6 rounded-xl bg-gold/5 border border-gold/20">
                 <div className="text-sm font-mono text-dim mb-4">
-                  Valor gerado
+                  Valor deste bônus
                 </div>
-                <div className="text-4xl font-serif text-gradient-blue mb-1">
+                <div className="text-4xl font-serif text-gradient-gold mb-1">
                   R$ 120K
                 </div>
                 <p className="text-sm text-cream-dim text-center mb-4">
                   por ano em posicionamento + referral
                 </p>
-                <div className="w-full h-px bg-edge my-2" />
-                <div className="text-sm font-mono text-dim mt-2 mb-1">
+                <div className="w-full h-px bg-gold/20 my-2" />
+                <div className="text-sm font-mono text-gold mt-2 mb-1">
                   Investimento
                 </div>
-                <div className="text-2xl font-serif text-cream">
+                <div className="text-2xl font-serif text-gold line-through opacity-60">
                   R$ 14.000
                 </div>
+                <div className="text-3xl font-serif text-gold font-bold mt-1">
+                  R$ 0
+                </div>
+                <p className="text-xs text-gold/70 mt-2 text-center">
+                  Incluso como bônus
+                </p>
               </div>
             </div>
           </motion.div>
 
-          {/* Projeto 2: Follow-up */}
+          {/* Projeto 1: Follow-up */}
           <motion.div
             variants={fadeUp}
             custom={5}
@@ -475,7 +482,7 @@ export default function GMXPitch() {
                     Follow-up Inteligente de Consórcios
                   </h3>
                   <span className="px-3 py-1 rounded-full bg-blue/10 text-blue-light text-xs font-mono">
-                    Projeto 2
+                    Projeto 1
                   </span>
                 </div>
                 <p className="text-cream-dim leading-relaxed mb-6">
@@ -536,7 +543,7 @@ export default function GMXPitch() {
                     Prospecção com IA
                   </h3>
                   <span className="px-3 py-1 rounded-full bg-blue/10 text-blue-light text-xs font-mono">
-                    Projeto 3
+                    Projeto 2
                   </span>
                 </div>
                 <p className="text-cream-dim leading-relaxed mb-6">
@@ -610,7 +617,7 @@ export default function GMXPitch() {
                   <Database className="w-7 h-7 text-gold" />
                   <h3 className="font-serif text-2xl">CRM Customizado</h3>
                   <span className="px-3 py-1 rounded-full bg-gold/10 text-gold text-xs font-mono">
-                    Projeto 4
+                    Projeto 3
                   </span>
                 </div>
                 <p className="text-cream-dim leading-relaxed mb-6">
@@ -860,7 +867,7 @@ export default function GMXPitch() {
             </div>
             <div className="flex gap-8 text-center">
               <div>
-                <div className="text-2xl font-serif text-cream">9,7:1</div>
+                <div className="text-2xl font-serif text-cream">12,6:1</div>
                 <div className="text-xs text-cream-dim">ROI</div>
               </div>
               <div className="w-px bg-edge" />
@@ -870,7 +877,7 @@ export default function GMXPitch() {
               </div>
               <div className="w-px bg-edge" />
               <div>
-                <div className="text-2xl font-serif text-cream">1,7%</div>
+                <div className="text-2xl font-serif text-cream">1,6%</div>
                 <div className="text-xs text-cream-dim">da receita GMX</div>
               </div>
             </div>
@@ -940,15 +947,7 @@ export default function GMXPitch() {
                 <tbody className="text-cream-dim">
                   {[
                     {
-                      name: "1. Conteúdo com IA",
-                      phase: "Fase 1",
-                      roiValue: "R$ 120K",
-                      price: "R$ 14.000",
-                      delivery: "2-3 sem",
-                      phaseColor: "text-blue-light",
-                    },
-                    {
-                      name: "2. Follow-up Consórcios",
+                      name: "1. Follow-up Consórcios",
                       phase: "Fase 1",
                       roiValue: "R$ 132K",
                       price: "R$ 13.200",
@@ -956,7 +955,7 @@ export default function GMXPitch() {
                       phaseColor: "text-blue-light",
                     },
                     {
-                      name: "3. Prospecção com IA",
+                      name: "2. Prospecção com IA",
                       phase: "Fase 1",
                       roiValue: "R$ 180K",
                       price: "R$ 18.000",
@@ -964,24 +963,38 @@ export default function GMXPitch() {
                       phaseColor: "text-blue-light",
                     },
                     {
-                      name: "4. CRM Customizado",
+                      name: "3. CRM Customizado",
                       phase: "Fase 2",
                       roiValue: "R$ 157K",
                       price: "R$ 15.700",
                       delivery: "3-4 sem",
                       phaseColor: "text-gold",
                     },
+                    {
+                      name: "BÔNUS: Conteúdo com IA",
+                      phase: "Fase 1",
+                      roiValue: "R$ 120K",
+                      price: "R$ 0",
+                      delivery: "2-3 sem",
+                      phaseColor: "text-blue-light",
+                      isBonus: true,
+                    },
                   ].map((row) => (
-                    <tr key={row.name} className="border-b border-edge/50">
-                      <td className="py-4 pr-4 font-medium text-cream">
+                    <tr key={row.name} className={`border-b border-edge/50 ${"isBonus" in row ? "text-gold" : ""}`}>
+                      <td className={`py-4 pr-4 font-medium ${"isBonus" in row ? "text-gold" : "text-cream"}`}>
                         {row.name}
                       </td>
                       <td className={`text-center py-4 px-4 font-mono text-xs ${row.phaseColor}`}>
                         {row.phase}
                       </td>
                       <td className="text-center py-4 px-4">{row.roiValue}</td>
-                      <td className="text-center py-4 px-4 font-semibold text-blue-light">
-                        {row.price}
+                      <td className={`text-center py-4 px-4 font-semibold ${"isBonus" in row ? "text-gold" : "text-blue-light"}`}>
+                        {"isBonus" in row ? (
+                          <span>
+                            <span className="line-through opacity-50 mr-2">R$ 14.000</span>
+                            {row.price}
+                          </span>
+                        ) : row.price}
                       </td>
                       <td className="text-center py-4 px-4">{row.delivery}</td>
                     </tr>
@@ -989,12 +1002,25 @@ export default function GMXPitch() {
                   <tr className="border-t-2 border-gold/30">
                     <td className="py-4 pr-4 font-bold text-cream text-base" colSpan={2}>TOTAL</td>
                     <td className="text-center py-4 px-4 font-bold text-cream">R$ 589K</td>
-                    <td className="text-center py-4 px-4 font-bold text-gold text-lg">R$ 60.900</td>
+                    <td className="text-center py-4 px-4 font-bold text-gold text-lg">R$ 46.900</td>
                     <td className="text-center py-4 px-4 text-cream">8-10 sem</td>
                   </tr>
                 </tbody>
               </table>
             </div>
+          </motion.div>
+
+          {/* Bonus callout */}
+          <motion.div
+            variants={fadeUp}
+            custom={4}
+            className="p-5 rounded-xl border border-gold/30 bg-gold-subtle text-center mb-8"
+          >
+            <p className="text-sm text-cream">
+              <Sparkles className="w-4 h-4 text-gold inline mr-2" />
+              <strong className="text-gold">Conteúdo com IA (valor R$ 14.000)</strong>{" "}
+              incluso gratuitamente em qualquer projeto. 4 entregas pelo preço de 3.
+            </p>
           </motion.div>
 
           {/* Payment Options */}
@@ -1016,10 +1042,10 @@ export default function GMXPitch() {
                   À vista
                 </div>
                 <div className="text-3xl font-serif text-gradient-gold mb-1">
-                  R$ 54.800
+                  R$ 42.200
                 </div>
                 <p className="text-xs text-gold mb-4">
-                  Economia de R$ 6.100 (10% off)
+                  Economia de R$ 4.700 (10% off)
                 </p>
                 <div className="w-full h-px bg-edge my-3" />
                 <p className="text-xs text-cream-dim">
@@ -1033,10 +1059,10 @@ export default function GMXPitch() {
                   Em 2×
                 </div>
                 <div className="text-3xl font-serif text-cream mb-1">
-                  2× R$ 30.450
+                  2× R$ 23.450
                 </div>
                 <p className="text-xs text-cream-dim mb-4">
-                  Total: R$ 60.900 &mdash; sem juros
+                  Total: R$ 46.900 &mdash; sem juros
                 </p>
                 <div className="w-full h-px bg-edge my-3" />
                 <p className="text-xs text-cream-dim">
@@ -1050,14 +1076,14 @@ export default function GMXPitch() {
                   Por fase
                 </div>
                 <div className="text-3xl font-serif text-cream mb-1">
-                  4 parcelas
+                  3 parcelas
                 </div>
                 <p className="text-xs text-cream-dim mb-4">
-                  Total: R$ 60.900 &mdash; sem juros
+                  Total: R$ 46.900 &mdash; sem juros
                 </p>
                 <div className="w-full h-px bg-edge my-3" />
                 <p className="text-xs text-cream-dim">
-                  Paga cada projeto na entrega: R$ 14.000 + R$ 13.200 + R$ 18.000 + R$ 15.700.
+                  Paga cada projeto na entrega: R$ 13.200 + R$ 18.000 + R$ 15.700.
                 </p>
               </div>
             </div>
@@ -1610,7 +1636,7 @@ export default function GMXPitch() {
               <span className="w-1 h-1 rounded-full bg-edge-light" />
               <span className="flex items-center gap-2">
                 <CheckCircle className="w-4 h-4 text-blue-light" />
-                ROI 9,7×
+                ROI 12,6×
               </span>
             </div>
           </motion.div>
