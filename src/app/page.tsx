@@ -398,11 +398,138 @@ export default function GMXPitch() {
             <span className="text-sm text-cream-dim">&mdash; semanas 1 a 5</span>
           </motion.div>
 
-          {/* Projeto 1: Conteúdo com IA — BÔNUS */}
+          {/* Projeto 1: Follow-up */}
           <motion.div
             variants={fadeUp}
             custom={4}
-            className="mb-6 p-8 rounded-2xl border-2 border-gold/40 bg-gradient-to-br from-gold-subtle to-transparent relative overflow-hidden"
+            className="mb-6 p-8 rounded-2xl border border-blue/15 bg-gradient-to-br from-blue-subtle to-transparent relative overflow-hidden"
+          >
+            <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-blue/20 text-blue-light text-[10px] font-bold uppercase tracking-widest">
+              IA + Automação
+            </div>
+            <div className="flex flex-col lg:flex-row gap-8">
+              <div className="lg:w-2/3">
+                <div className="flex items-center gap-3 mb-4">
+                  <MessageSquare className="w-7 h-7 text-blue-light" />
+                  <h3 className="font-serif text-2xl">
+                    Follow-up Inteligente de Consórcios
+                  </h3>
+                  <span className="px-3 py-1 rounded-full bg-blue/10 text-blue-light text-xs font-mono">
+                    Projeto 1
+                  </span>
+                </div>
+                <p className="text-cream-dim leading-relaxed mb-6">
+                  Motor de cadência com IA que cuida da maior carteira Mapfre do Brasil
+                  automaticamente via WhatsApp &mdash; com aprovação antes do envio.
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
+                  {[
+                    "Lembrete do objetivo do consórcio",
+                    "Aviso de depósito com 5 dias de antecedência",
+                    "Celebração de milestones (50%, contemplação)",
+                    "Alerta ao consultor quando cliente perde pagamento",
+                    "10 templates personalizáveis com voz GMX",
+                    "Fluxo de aprovação antes do envio",
+                  ].map((item) => (
+                    <div key={item} className="flex gap-2 text-sm text-cream-dim">
+                      <CheckCircle className="w-4 h-4 text-blue-light shrink-0 mt-0.5" />
+                      {item}
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="lg:w-1/3 flex flex-col justify-center items-center p-6 rounded-xl bg-surface/50 border border-edge">
+                <div className="text-sm font-mono text-dim mb-4">
+                  Valor gerado
+                </div>
+                <div className="text-4xl font-serif text-gradient-blue mb-1">
+                  R$ 132K
+                </div>
+                <p className="text-sm text-cream-dim text-center mb-4">
+                  por ano em retenção de carteira
+                </p>
+                <div className="w-full h-px bg-edge my-2" />
+                <div className="text-sm font-mono text-dim mt-2 mb-1">
+                  Investimento
+                </div>
+                <div className="text-2xl font-serif text-cream">
+                  R$ 13.200
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Projeto 2: Prospecção */}
+          <motion.div
+            variants={fadeUp}
+            custom={5}
+            className="mb-6 p-8 rounded-2xl border border-blue/15 bg-gradient-to-br from-blue-subtle to-transparent relative overflow-hidden"
+          >
+            <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-blue/20 text-blue-light text-[10px] font-bold uppercase tracking-widest">
+              IA + Chatbot
+            </div>
+            <div className="flex flex-col lg:flex-row gap-8">
+              <div className="lg:w-2/3">
+                <div className="flex items-center gap-3 mb-4">
+                  <Bot className="w-7 h-7 text-blue-light" />
+                  <h3 className="font-serif text-2xl">
+                    Prospecção com IA
+                  </h3>
+                  <span className="px-3 py-1 rounded-full bg-blue/10 text-blue-light text-xs font-mono">
+                    Projeto 2
+                  </span>
+                </div>
+                <p className="text-cream-dim leading-relaxed mb-6">
+                  Chatbot inteligente que qualifica leads 24/7 +
+                  funil digital completo &mdash; com verificação legal antes de qualquer ação.
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
+                  {[
+                    "Chatbot de qualificação (filtra antes do humano)",
+                    "Verificação legal LGPD + ToS de cada plataforma",
+                    "Lead magnet (ex: Guia dos 4 Potes) + landing page",
+                    "LinkedIn Sales Navigator setup",
+                    "Cadência de outreach semi-automatizada com IA",
+                    "Integração total com o CRM (Fase 2)",
+                  ].map((item) => (
+                    <div key={item} className="flex gap-2 text-sm text-cream-dim">
+                      <CheckCircle className="w-4 h-4 text-blue-light shrink-0 mt-0.5" />
+                      {item}
+                    </div>
+                  ))}
+                </div>
+                <p className="mt-6 text-xs text-cream-dim/70 italic">
+                  Se a verificação legal identificar bloqueio em prospecção
+                  ativa, adaptamos para 100% inbound &mdash; sem alteração de
+                  investimento.
+                </p>
+              </div>
+              <div className="lg:w-1/3 flex flex-col justify-center items-center p-6 rounded-xl bg-surface/50 border border-edge">
+                <div className="text-sm font-mono text-dim mb-4">
+                  Valor gerado
+                </div>
+                <div className="text-4xl font-serif text-gradient-blue mb-1">
+                  R$ 180K
+                </div>
+                <p className="text-sm text-cream-dim text-center mb-4">
+                  por ano em novos clientes
+                </p>
+                <div className="w-full h-px bg-edge my-2" />
+                <div className="text-sm font-mono text-dim mt-2 mb-1">
+                  Investimento
+                </div>
+                <div className="text-2xl font-serif text-cream">
+                  R$ 18.000
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Conteúdo com IA — BÔNUS */}
+          <motion.div
+            variants={fadeUp}
+            custom={6}
+            className="mb-16 p-8 rounded-2xl border-2 border-gold/40 bg-gradient-to-br from-gold-subtle to-transparent relative overflow-hidden"
           >
             <div className="absolute top-4 right-4 px-4 py-1.5 rounded-full bg-gold text-black text-xs font-bold uppercase tracking-widest">
               Bônus Incluso
@@ -461,133 +588,6 @@ export default function GMXPitch() {
                 <p className="text-xs text-gold/70 mt-2 text-center">
                   Incluso como bônus
                 </p>
-              </div>
-            </div>
-          </motion.div>
-
-          {/* Projeto 1: Follow-up */}
-          <motion.div
-            variants={fadeUp}
-            custom={5}
-            className="mb-6 p-8 rounded-2xl border border-blue/15 bg-gradient-to-br from-blue-subtle to-transparent relative overflow-hidden"
-          >
-            <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-blue/20 text-blue-light text-[10px] font-bold uppercase tracking-widest">
-              IA + Automação
-            </div>
-            <div className="flex flex-col lg:flex-row gap-8">
-              <div className="lg:w-2/3">
-                <div className="flex items-center gap-3 mb-4">
-                  <MessageSquare className="w-7 h-7 text-blue-light" />
-                  <h3 className="font-serif text-2xl">
-                    Follow-up Inteligente de Consórcios
-                  </h3>
-                  <span className="px-3 py-1 rounded-full bg-blue/10 text-blue-light text-xs font-mono">
-                    Projeto 1
-                  </span>
-                </div>
-                <p className="text-cream-dim leading-relaxed mb-6">
-                  Motor de cadência com IA que cuida da maior carteira Mapfre do Brasil
-                  automaticamente via WhatsApp &mdash; com aprovação antes do envio.
-                </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
-                  {[
-                    "Lembrete do objetivo do consórcio",
-                    "Aviso de depósito com 5 dias de antecedência",
-                    "Celebração de milestones (50%, contemplação)",
-                    "Alerta ao consultor quando cliente perde pagamento",
-                    "10 templates personalizáveis com voz GMX",
-                    "Fluxo de aprovação antes do envio",
-                  ].map((item) => (
-                    <div key={item} className="flex gap-2 text-sm text-cream-dim">
-                      <CheckCircle className="w-4 h-4 text-blue-light shrink-0 mt-0.5" />
-                      {item}
-                    </div>
-                  ))}
-                </div>
-              </div>
-              <div className="lg:w-1/3 flex flex-col justify-center items-center p-6 rounded-xl bg-surface/50 border border-edge">
-                <div className="text-sm font-mono text-dim mb-4">
-                  Valor gerado
-                </div>
-                <div className="text-4xl font-serif text-gradient-blue mb-1">
-                  R$ 132K
-                </div>
-                <p className="text-sm text-cream-dim text-center mb-4">
-                  por ano em retenção de carteira
-                </p>
-                <div className="w-full h-px bg-edge my-2" />
-                <div className="text-sm font-mono text-dim mt-2 mb-1">
-                  Investimento
-                </div>
-                <div className="text-2xl font-serif text-cream">
-                  R$ 13.200
-                </div>
-              </div>
-            </div>
-          </motion.div>
-
-          {/* Projeto 3: Prospecção */}
-          <motion.div
-            variants={fadeUp}
-            custom={6}
-            className="mb-16 p-8 rounded-2xl border border-blue/15 bg-gradient-to-br from-blue-subtle to-transparent relative overflow-hidden"
-          >
-            <div className="absolute top-4 right-4 px-3 py-1 rounded-full bg-blue/20 text-blue-light text-[10px] font-bold uppercase tracking-widest">
-              IA + Chatbot
-            </div>
-            <div className="flex flex-col lg:flex-row gap-8">
-              <div className="lg:w-2/3">
-                <div className="flex items-center gap-3 mb-4">
-                  <Bot className="w-7 h-7 text-blue-light" />
-                  <h3 className="font-serif text-2xl">
-                    Prospecção com IA
-                  </h3>
-                  <span className="px-3 py-1 rounded-full bg-blue/10 text-blue-light text-xs font-mono">
-                    Projeto 2
-                  </span>
-                </div>
-                <p className="text-cream-dim leading-relaxed mb-6">
-                  Chatbot inteligente que qualifica leads 24/7 +
-                  funil digital completo &mdash; com verificação legal antes de qualquer ação.
-                </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
-                  {[
-                    "Chatbot de qualificação (filtra antes do humano)",
-                    "Verificação legal LGPD + ToS de cada plataforma",
-                    "Lead magnet (ex: Guia dos 4 Potes) + landing page",
-                    "LinkedIn Sales Navigator setup",
-                    "Cadência de outreach semi-automatizada com IA",
-                    "Integração total com o CRM (Fase 2)",
-                  ].map((item) => (
-                    <div key={item} className="flex gap-2 text-sm text-cream-dim">
-                      <CheckCircle className="w-4 h-4 text-blue-light shrink-0 mt-0.5" />
-                      {item}
-                    </div>
-                  ))}
-                </div>
-                <p className="mt-6 text-xs text-cream-dim/70 italic">
-                  Se a verificação legal identificar bloqueio em prospecção
-                  ativa, adaptamos para 100% inbound &mdash; sem alteração de
-                  investimento.
-                </p>
-              </div>
-              <div className="lg:w-1/3 flex flex-col justify-center items-center p-6 rounded-xl bg-surface/50 border border-edge">
-                <div className="text-sm font-mono text-dim mb-4">
-                  Valor gerado
-                </div>
-                <div className="text-4xl font-serif text-gradient-blue mb-1">
-                  R$ 180K
-                </div>
-                <p className="text-sm text-cream-dim text-center mb-4">
-                  por ano em novos clientes
-                </p>
-                <div className="w-full h-px bg-edge my-2" />
-                <div className="text-sm font-mono text-dim mt-2 mb-1">
-                  Investimento
-                </div>
-                <div className="text-2xl font-serif text-cream">
-                  R$ 18.000
-                </div>
               </div>
             </div>
           </motion.div>
@@ -702,47 +702,10 @@ export default function GMXPitch() {
           </motion.p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Conteúdo */}
-            <motion.div
-              variants={fadeUp}
-              custom={3}
-              className="p-8 rounded-2xl border border-blue/20 bg-gradient-to-br from-blue-subtle to-transparent"
-            >
-              <div className="flex items-center gap-3 mb-5">
-                <Sparkles className="w-6 h-6 text-blue-light" />
-                <h3 className="font-serif text-xl">Conteúdo com IA</h3>
-                <span className="text-[10px] px-2 py-0.5 rounded-full bg-blue/20 text-blue-light">Fase 1</span>
-              </div>
-              <div className="text-4xl font-serif text-gradient-blue mb-6">
-                R$ 120K<span className="text-lg text-cream-dim font-normal">/ano</span>
-              </div>
-              <div className="space-y-4">
-                <div className="flex justify-between items-start gap-4">
-                  <div>
-                    <div className="text-sm text-cream font-medium">Substituição de produção</div>
-                    <p className="text-xs text-cream-dim mt-0.5">
-                      4 artigos + 2 vídeos/semana. Uma agência cobra R$6K/mês pelo mesmo volume. Com IA, sai em minutos.
-                    </p>
-                  </div>
-                  <span className="text-sm font-mono text-blue-light whitespace-nowrap">R$ 72K</span>
-                </div>
-                <div className="h-px bg-edge/50" />
-                <div className="flex justify-between items-start gap-4">
-                  <div>
-                    <div className="text-sm text-cream font-medium">Leads orgânicos</div>
-                    <p className="text-xs text-cream-dim mt-0.5">
-                      Autoridade digital gera indicações. Quem publica regularmente no LinkedIn atrai clientes sem pagar por lead.
-                    </p>
-                  </div>
-                  <span className="text-sm font-mono text-blue-light whitespace-nowrap">R$ 48K</span>
-                </div>
-              </div>
-            </motion.div>
-
             {/* Follow-up */}
             <motion.div
               variants={fadeUp}
-              custom={4}
+              custom={3}
               className="p-8 rounded-2xl border border-blue/20 bg-gradient-to-br from-blue-subtle to-transparent"
             >
               <div className="flex items-center gap-3 mb-5">
@@ -779,7 +742,7 @@ export default function GMXPitch() {
             {/* Prospecção */}
             <motion.div
               variants={fadeUp}
-              custom={5}
+              custom={4}
               className="p-8 rounded-2xl border border-blue/20 bg-gradient-to-br from-blue-subtle to-transparent"
             >
               <div className="flex items-center gap-3 mb-5">
@@ -809,6 +772,43 @@ export default function GMXPitch() {
                     </p>
                   </div>
                   <span className="text-sm font-mono text-blue-light whitespace-nowrap">R$ 72K</span>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Conteúdo */}
+            <motion.div
+              variants={fadeUp}
+              custom={5}
+              className="p-8 rounded-2xl border border-blue/20 bg-gradient-to-br from-blue-subtle to-transparent"
+            >
+              <div className="flex items-center gap-3 mb-5">
+                <Sparkles className="w-6 h-6 text-blue-light" />
+                <h3 className="font-serif text-xl">Conteúdo com IA</h3>
+                <span className="text-[10px] px-2 py-0.5 rounded-full bg-blue/20 text-blue-light">Fase 1</span>
+              </div>
+              <div className="text-4xl font-serif text-gradient-blue mb-6">
+                R$ 120K<span className="text-lg text-cream-dim font-normal">/ano</span>
+              </div>
+              <div className="space-y-4">
+                <div className="flex justify-between items-start gap-4">
+                  <div>
+                    <div className="text-sm text-cream font-medium">Substituição de produção</div>
+                    <p className="text-xs text-cream-dim mt-0.5">
+                      4 artigos + 2 vídeos/semana. Uma agência cobra R$6K/mês pelo mesmo volume. Com IA, sai em minutos.
+                    </p>
+                  </div>
+                  <span className="text-sm font-mono text-blue-light whitespace-nowrap">R$ 72K</span>
+                </div>
+                <div className="h-px bg-edge/50" />
+                <div className="flex justify-between items-start gap-4">
+                  <div>
+                    <div className="text-sm text-cream font-medium">Leads orgânicos</div>
+                    <p className="text-xs text-cream-dim mt-0.5">
+                      Autoridade digital gera indicações. Quem publica regularmente no LinkedIn atrai clientes sem pagar por lead.
+                    </p>
+                  </div>
+                  <span className="text-sm font-mono text-blue-light whitespace-nowrap">R$ 48K</span>
                 </div>
               </div>
             </motion.div>
